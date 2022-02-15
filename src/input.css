@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-primary {
+    @apply mt-7 p-3 bg-transparent border-2 border-yellow-400 text-slate-800 w-3/12 text-center cursor-pointer;
+}
+
+.button{
+    @apply mt-7 p-3 bg-transparent border-2 border-yellow-400 text-slate-800  text-center cursor-pointer;
+}
+
+.navbar-items{
+    @apply px-2 py-1 mr-2 align-middle font-bold md:text-base lg:text-lg tracking-wide cursor-pointer
+}
+
+.style-picture-2{
+    @apply bg-no-repeat bg-cover bg-center border border-slate-200 rounded-sm shadow transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-cyan-400 hover:shadow-lg hover:border-cyan-300 hover:border-2 duration-300 cursor-pointer;
+}

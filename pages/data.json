@@ -1,0 +1,67 @@
+{
+    "workExperience" : [
+    {
+        "id": "iium1Button-response",
+        "companyName":"Internationl Islamic Univeristy Malaysia",
+        "position": "Research Assistant",
+        "workingPeriod":"March 2022 - October 2024",
+        "companyLink": " ",
+        "jobDescription": [
+            "Evaluate and provide input to inspection processes via inspection aids and instruction guidelines and Adhere to all safety and health rules and regulations associated with this position and as by the Head of Department.",
+            "Interface and provide technical support on quality issues with the customer as needed. and Liaise, engage & correspond to other departments related to quality issues.",
+            "Provide insight and assistance in implementing and maintaining Process Improvement and Optimization concentrating on proactive methodologies.",
+            "Lead </span> Quality meetings to drive for corrective actions and preventive actions taken are effective. Data compilation and analysis report with regular plotting and monitoring charts. Work together with Project Team for all new product introduction and new engineering requirements."
+        ]
+    },
+    {
+        "id": "alegionButton-response",
+        "companyName":"Alegion Sdn Bhd",
+        "position": "Data Annotator",
+        "workingPeriod":"November 2021 - Present",
+        "companyLink": " ",
+        "jobDescription": [
+            "Evaluate and provide input to inspection processes via inspection aids and instruction guidelines and Adhere to all safety and health rules and regulations associated with this position and as by the Head of Department.",
+            "Interface and provide technical support on quality issues with the customer as needed. and Liaise, engage & correspond to other departments related to quality issues.",
+            "Provide insight and assistance in implementing and maintaining Process Improvement and Optimization concentrating on proactive methodologies.",
+            "Lead </span> Quality meetings to drive for corrective actions and preventive actions taken are effective. Data compilation and analysis report with regular plotting and monitoring charts. Work together with Project Team for all new product introduction and new engineering requirements."
+        ]
+    },
+    {
+       "id": "phnButton-response",
+       "companyName":"PHN Industry",
+       "position": "Quality Executive",
+       "workingPeriod":"April 2021 - October 2021",
+       "companyLink": " ",
+       "jobDescription": [
+           "Evaluate and provide input to inspection processes via inspection aids and instruction guidelines and Adhere to all safety and health rules and regulations associated with this position and as by the Head of Department.",
+           "Provide insight and assistance in implementing and maintaining Process Improvement and Optimization concentrating on proactive methodologies.",
+           "Lead </span> Quality meetings to drive for corrective actions and preventive actions taken are effective. Data compilation and analysis report with regular plotting and monitoring charts. Work together with Project Team for all new product introduction and new engineering requirements."
+       ]
+    },
+    {
+        "id": "iium2Button-response",
+        "companyName":"International Islamic University Malaysia",
+        "position": "Research Assistant",
+        "workingPeriod":"January 2021 - March 2021",
+        "companyLink": " ",
+        "jobDescription": [
+            "Evaluate and provide input to inspection processes via inspection aids and instruction guidelines and Adhere to all safety and health rules and regulations associated with this position and as by the Head of Department.",
+            "Interface and provide technical support on quality issues with the customer as needed. and Liaise, engage & correspond to other departments related to quality issues.",
+            "Provide insight and assistance in implementing and maintaining Process Improvement and Optimization concentrating on proactive methodologies."
+        ]
+     },
+     {
+        "id": "cenergiButton-response",
+        "companyName":"PHN Industry",
+        "position": "Quality Executive",
+        "workingPeriod":"June 2019 - September 2019",
+        "companyLink": " ",
+        "jobDescription": [
+            "Evaluate and provide input to inspection processes via inspection aids and instruction guidelines and Adhere to all safety and health rules and regulations associated with this position and as by the Head of Department.",
+            "Interface and provide technical support on quality issues with the customer as needed. and Liaise, engage & correspond to other departments related to quality issues.",
+            "Provide insight and assistance in implementing and maintaining Process Improvement and Optimization concentrating on proactive methodologies.",
+            "Leading </span> Quality meetings to drive for corrective actions and preventive actions taken are effective. Data compilation and analysis report with regular plotting and monitoring charts. Work together with Project Team for all new product introduction and new engineering requirements."
+        ]
+     }
+  ]
+}
