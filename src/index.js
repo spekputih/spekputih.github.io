@@ -31,7 +31,7 @@ function getElement(el){
 }
 
 
-fetch("./pages/data.json")
+fetch("./src/data.json")
   .then((response) => {
     return response.json();
   }).then(jsondata => {
