@@ -22,7 +22,7 @@
   <!-- navbar -->
   <div class="overflow-x-hidden">
   <nav class="bg-transparent top-0 z-10 w-screen fixed">
-    <div class="md:mx-16 md:my-5">
+    <div class="md:mx-16 md:my-5 relative">
       <div class="flex justify-between items-center">
         <div id="logo"
           class="mt-3 ml-5 font-highlight font-bold p-2 text-slate-100  md:text-2xl lg:text-3xl tracking-widest drop-shadow-md">
@@ -45,7 +45,7 @@
           </ul>
           
         </div>
-        <div class="cursor-pointer md:hidden" id="burger">
+        <div class="cursor-pointer md:hidden absolute top-1/2 right-6" id="burger">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -87,7 +87,7 @@
   <div class="min-h-fit md:h-screen w-screen ">
     <div class="mx-auto lg:w-screen40 w-screen80 h-full py-7">
       <div class="grid grid-cols-12 gap-4 content-center h-full items-center justify-items-stretch">
-        <div class="col-span-12 md:col-span-7 space-x-4 w-full">
+        <div class="col-span-12 md:col-span-7 w-full">
           <div class="flex items-center justify-between">
             <div class="font-mono text-2xl md:text-3xl font-semibold text-slate-800 w-3/6">
               <span class="text-xl md:text-2xl text-red-500">01.</span> About me
@@ -132,7 +132,7 @@
 
 
   <!-- start work experience -->
-  <div class="bg-gradient-to-r from-sky-500 to-indigo-500 min-h-fit">
+  <div class="bg-gradient-to-r from-sky-500 to-indigo-500 min-h-fit h-auto">
     <div class="grid grid-cols-1 place-content-center mx-auto w-screen80 md:w-screen60 lg:w-screen60 h-full py-7">
       <div class="font-sans text-3xl font-semibold text-slate-100  drop-shadow">
         <span class="text-2xl text-yellow-400 font-mono">02.</span> Where I've worked.
@@ -296,7 +296,7 @@
   <!-- end project section -->
 
   <!-- other noteworthy projects section -->
-  <div >
+  <div class="">
     <div class="w-screen70 lg:w-screen50 mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 items-stretch">
         <div class="p-3 w-full text-white col-span-1 md:col-span-2 lg:col-span-3 text-center space-y-5">
@@ -377,8 +377,8 @@
 
 
   <!-- start work list section -->
-  <div id="work" class="">
-    <div class="flex container h-screen70 md:h-screen pt-20 min-h-fit">
+  <div id="work" class="h-auto min-h-fit w-full">
+    <div class="flex container h-screen pt-20 mx-auto">
       <!-- text -->
       <div class="h-3/4 grid grid-cols-1 content-center md:w-3/6 px-2">
         <div class="py-3 font-bold text-4xl md:text-5xl lg:text-7xl md:text-left text-center">
@@ -413,7 +413,7 @@
   </div>
 
   <!-- what's next section -->
-  <div class="lg:w-screen40 mx-auto lg:h-screen60 min-h-fit pb-9">
+  <div class="lg:w-screen40 mx-auto h-auto min-h-fit pb-9">
     <div class="pb-6">
       <div>
         <div class="col-span-12 font-sans text-3xl font-bold text-slate-700 w-full mx-auto text-center drop-shadow">
@@ -426,7 +426,7 @@
           Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
         </div>
         <div class="col-span-12 font-sans lg:text-xl font-semibold text-red-500 mx-auto text-center drop-shadow lg:mt-16 mt-8">
-          <p class="cursor-pointer bg-transparent py-4 px-4 border-2 border-red-500 w-3/12 mx-auto rounded-md shadow-lg hover:shadow-xl transition-shadow ease-in-out"> Say Hello! </p>
+          <p class="cursor-pointer bg-transparent py-4 px-4 border-2 border-red-500 w-5/12 mx-auto rounded-md shadow-lg hover:shadow-xl transition-shadow ease-in-out"> Say Hello! </p>
         </div>
       </div>
     </div>
@@ -434,7 +434,7 @@
 </div>
 
 
-  <script src="./src/index.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
