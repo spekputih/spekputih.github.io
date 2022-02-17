@@ -61,7 +61,7 @@
       <div class="mx-auto container h-full">
         <div class="py-12 px-5 md:container md:mx-12 relative h-full w-full">
           <div id="introElement"
-            class="grid grid-cols-1 gap-4 content-center md:mx-12 h-full text-center md:text-left w-full align-middle justify-center">
+            class="grid grid-cols-1 gap-4 content-center md:mx-12 h-full text-center md:text-left w-full align-middle justify-center opacity-0">
             <div class="font-mono text-base md:text-xl tracking-wide text-yellow-300 w-full ">
               Hi, I am
             </div>
@@ -89,9 +89,9 @@
 
     <!-- start about me section -->
     <div id="about-me" class="min-h-fit md:h-screen w-screen ">
-      <div class="mx-auto lg:w-screen40 w-screen80 h-full py-7">
-        <div class="grid grid-cols-12 gap-4 content-center h-full items-center justify-items-stretch">
-          <div class="col-span-12 md:col-span-7 w-full">
+      <div class="mx-auto lg:w-screen70 w-screen80 h-full py-7">
+        <div class="grid grid-cols-12 gap-12 content-center h-full items-center justify-items-stretch">
+          <div id="about-me-text" class="col-span-12 md:col-span-7 w-full opacity-0">
             <div class="flex items-center justify-between">
               <div class="font-mono text-2xl md:text-3xl font-semibold text-slate-800 w-3/6">
                 <span class="text-xl md:text-2xl text-red-500">01.</span> About me
@@ -99,7 +99,7 @@
               <!-- <div class="w-4/6 border-t-2 border-red-500 drop-shadow-sm hidden md:block"></div> -->
             </div>
             <div class="w-full mx-auto">
-              <div class="font-sans text-base font-medium text-slate-700 w-full  mt-3 text-justify">
+              <div class="font-sans text-base md:text-2xl font-medium text-slate-700 w-full  mt-3 ">
                 Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
                 development started
                 back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom
@@ -107,7 +107,7 @@
                 button
                 taught me a lot about HTML & CSS!
               </div>
-              <div class="font-sans text-base font-medium text-slate-700 w-full mt-4 text-justify">
+              <div class="font-sans text-base md:text-2xl font-medium text-slate-700 w-full mt-4 ">
                 Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a
                 huge
                 corporation,
@@ -115,7 +115,7 @@
                 digital
                 experiences at Upstatement for a variety of clients.
               </div>
-              <div class="font-sans text-base font-medium text-slate-700 w-full  mt-4 text-justify">
+              <div class="font-sans text-base md:text-2xl font-medium text-slate-700 w-full  mt-4 ">
                 I also recently launched a course that covers everything you need to build a web app with the Spotify
                 API
                 using Node &
@@ -125,9 +125,9 @@
               </div>
             </div>
           </div>
-          <div class="col-span-12 md:col-span-5 justify-self-center ">
+          <div id="about-me-img" class="col-span-12 md:col-span-5 justify-self-center opacity-0">
             <div class="w-full mx-auto">
-              <div class="h-screen40 w-80 md:w-72 style-picture-2"
+              <div class="md:h-screen80 w-80 md:w-96 style-picture-2"
                 style="background-image: url('../dist/img/sitevisit.jpg');">
               </div>
             </div>
@@ -139,13 +139,13 @@
 
 
     <!-- start work experience -->
-    <div id="work-experience" class="bg-gradient-to-r from-sky-500 to-indigo-500 min-h-fit h-auto">
+    <div id="experience-section" class="bg-gradient-to-r from-sky-500 to-indigo-500 min-h-fit h-auto">
       <div class="grid grid-cols-1 place-content-center mx-auto w-screen80 md:w-screen60 lg:w-screen60 h-full py-7">
-        <div class="font-sans text-3xl font-semibold text-slate-100  drop-shadow">
+        <div id="experience-section-title" class="font-sans text-3xl font-semibold text-slate-100  drop-shadow opacity-0">
           <span class="text-2xl text-yellow-400 font-mono">02.</span> Where I've worked.
         </div>
         <div class="md:flex h-full w-full mt-16 align-middle">
-          <div class="md:w-3/12 flex md:block content-center overflow-auto mb-4">
+          <div id="experience-section-navbar" class="md:w-3/12 flex md:block content-center overflow-auto mb-4 opacity-0">
             <div id="iium1Button"
               class="workButton w-full md:border-l-4 border-t-4 md:border-t-0  border-yellow-400 cursor-pointer hover:bg-slate-100 ">
               <div class="p-3 font-primary font-bold text-slate-100 hover:text-slate-800 tracking-wider bg-slate-200 ">
@@ -177,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div id="work-experience" class="w-full md:w-9/12 md:ml-8">
+          <div id="work-experience" class="w-full md:w-9/12 md:ml-8 opacity-0">
           </div>
         </div>
       </div>
@@ -185,11 +185,11 @@
     <!-- end work experience -->
 
     <!-- start projects section -->
-    <div id="project" class="">
+    <div id="projects" class="">
       <div class="container md:w-screen80 lg:w-screen50 mx-auto lg:py-28 min-h-fit py-24 ">
         <div class="grid grid-cols-12 h-full gap-y-4 content-center justify-items-center">
           <!-- project main title -->
-          <div class="col-span-12 font-sans text-3xl font-bold text-slate-700 drop-shadow">
+          <div class="title-project-section opacity-0 col-span-12 font-sans text-3xl font-bold text-slate-700 drop-shadow">
             <span class="font-mono text-2xl text-red-500">03.</span> Some things I've built
           </div>
           <!-- project list start -->
@@ -199,15 +199,15 @@
 
           <div class="container col-span-12 text-gray-100 md:hidden mx-auto">
             <div
-              class="h-96 w-full bg-cover bg-center bg-no-repeat rounded-md shadow-lg hover:drop-shadow hover:-translate-y-2 hover:scale-110 transition-all ease-in-out relative"
+              class="img-project-section h-96 w-full bg-cover bg-center bg-no-repeat rounded-md shadow-lg hover:drop-shadow hover:-translate-y-2 hover:scale-110 transition-all ease-in-out relative"
               style="background-image: url(../dist/img/design\ 1.png);">
               <!-- project description -->
-              <div class="w-full h-96 bg-slate-700 bg-opacity-50 rounded-md">
+              <div class="text-project-section w-full h-96 bg-slate-700 bg-opacity-50 rounded-md">
                 <div class="grid grid-cols-1 content-center h-full justify-items-end w-full">
                   <div class="absolute h-full inset-y-0 right-0">
                     <div class="h-full w-full p-4">
                       <!-- type of project -->
-                      <div class="font-mono font-semibold text-red-500 drop-shadow">
+                      <div class="font-mono font-semibold text-red-500 drop-shadow ">
                         <p class="flex justify-center">Featured Project</p>
                       </div>
                       <!-- project title -->
@@ -252,26 +252,26 @@
 
           <div class="w-full  col-span-7 hidden md:block">
             <div
-              class="h-96 w-full bg-cover bg-center bg-no-repeat rounded-md shadow-lg hover:drop-shadow hover:-translate-y-2 hover:scale-110 transition-all ease-in-out"
+              class="img-project-section opacity-0 h-96 w-full bg-cover bg-center bg-no-repeat rounded-md shadow-lg hover:drop-shadow hover:-translate-y-2 hover:scale-110 transition-all ease-in-out"
               style="background-image: url(../dist/img/design\ 1.png);">
             </div>
           </div>
           <!-- project description -->
-          <div class="w-full  col-span-5 hidden md:block">
+          <div class="text-project-section w-full col-span-5 hidden md:block">
             <div class="grid grid-cols-1 content-center h-full justify-items-end w-full relative">
               <div class="absolute h-full inset-y-0 right-0 -left-11">
                 <div class="h-5/6 w-full">
                   <!-- type of project -->
-                  <div class="font-mono font-semibold text-red-500 drop-shadow">
+                  <div class="font-mono font-semibold text-red-500 drop-shadow text-item-project-section opacity-0">
                     <p class="flex justify-end">Featured Project</p>
                   </div>
                   <!-- project title -->
-                  <div class="font-sans font-bold text-2xl drop-shadow-sm tracking-wider">
+                  <div class="font-sans font-bold text-2xl drop-shadow-sm tracking-wider text-item-project-section opacity-0">
                     <p class="flex justify-end"> ChatBox App </p>
                   </div>
                   <!-- project details -->
                   <div
-                    class="bg-slate-800 rounded my-4 shadow shadow-slate-500 hover:shadow-lg hover:shadow-slate-700 transition-shadow ease-in-out">
+                    class="bg-slate-800 rounded my-4 shadow shadow-slate-500 hover:shadow-lg hover:shadow-slate-700 transition-shadow ease-in-out text-item-project-section opacity-0">
                     <div class="text-slate-300 p-8 text-base font-sans font-semibold drop-shadow min-w-full">
                       <p class="flex text-right">
                         A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual
@@ -280,7 +280,7 @@
                     </div>
                   </div>
                   <!-- technologies used -->
-                  <div class="my-4">
+                  <div class="my-4 text-item-project-section opacity-0">
                     <div class="flex justify-end">
                       <div class="flex font-mono text-base space-x-5 drop-shadow-sm">
                         <p> React </p>
@@ -290,7 +290,7 @@
                     </div>
                   </div>
                   <!-- project links -->
-                  <div>
+                  <div class="text-item-project-section opacity-0">
                     <div class="flex justify-end">
                       <div
                         class="px-3 py-1 bg-transparent border-2 border-slate-800 rounded-sm drop-shadow-sm text-base font-semibold cursor-pointer hover:bg-slate-400 hover:text-slate-50 transition-colors">

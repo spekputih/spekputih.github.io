@@ -136,11 +136,13 @@ let observer = new IntersectionObserver((entries) => {
 let introElement = document.querySelector("#introElement");
 let aboutUs = document.querySelector("#about-me");
 let projects = document.querySelector("#projects");
+let experienceSection = document.querySelector('#experience-section')
 let otherProject = document.querySelector("#other-projects");
 let works = document.querySelector("#works");
 let next = document.querySelector("#next");
 observer.observe(introElement);
 observer.observe(aboutUs);
+observer.observe(experienceSection);
 observer.observe(projects);
 observer.observe(otherProject);
 observer.observe(works);
@@ -166,6 +168,9 @@ const handleEntries = (entries) => {
         if (entry.intersectionRatio > visibilityRatio) {
           handleAnimation(entry.target.id);
         }
+        else{
+          return
+        }
       }
     });
   };
@@ -181,12 +186,86 @@ const handleAnimation = (elementId) => {
         translateX: [250, 0], // from 100 to 250
       });
       observer.unobserve(document.querySelector("#"+elementId))
-    case 'about-me': console.log('ini '+elementId)
-    case 'projects': console.log('ini '+elementId)
-    case 'other-projects': console.log('ini '+elementId)
-    case 'introElement': console.log('ini '+elementId)
-    case 'works': console.log('ini '+elementId)
-    case 'next': console.log('ini '+elementId)
+      break;
+    case 'about-me': 
+      console.log('ini '+elementId)
+      anime({
+        targets: document.querySelector('#about-me-text'),
+        translateX: [-150, 0],
+        opacity: [0,1],
+        duration: 3000
+      })
+      anime({
+        targets: document.querySelector('#about-me-img'),
+        translateX: [150, 0],
+        opacity: [0,1],
+        duration: 3000
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'experience-section': 
+      console.log('ini '+elementId)
+      anime({
+        targets: [document.querySelector('#experience-section-title'), document.querySelector('#experience-section-navbar'), document.querySelector('#work-experience')],
+        translateX: [150, 0],
+        opacity: [0,1],
+        delay: anime.stagger(200),
+        duration: 3000
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'projects':
+      let textItems = document.querySelectorAll('.text-item-project-section')
+      console.log('ini '+elementId)
+      anime({
+        targets: ['.title-project-section'],
+        opacity: [0, 1],
+        duration: 3500
+      })
+      anime({
+        targets: ['.img-project-section'],
+        translateX: [-150, 0],
+        opacity: [0,1],
+        duration: 3000
+      })
+      anime({
+        targets: textItems,
+        translateX: [150, 0],
+        opacity: [0,1],
+        delay: anime.stagger(200, {from: 'center' }),
+        duration: 3000
+
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'other-projects': 
+      console.log('ini '+elementId);
+      anime({
+
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'introElement': 
+      console.log('ini '+elementId)
+      anime({
+
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'works': 
+      console.log('ini '+elementId)
+      anime({
+
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
+    case 'next': 
+      console.log('ini '+elementId)
+      anime({
+
+      })
+      observer.unobserve(document.querySelector("#"+elementId))
+      break;
     default:
       break;
   }
