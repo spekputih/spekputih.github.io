@@ -239,9 +239,14 @@ const handleAnimation = (elementId) => {
       observer.unobserve(document.querySelector("#"+elementId))
       break;
     case 'other-projects': 
+      let projects = document.querySelectorAll('.other-project')
       console.log('ini '+elementId);
       anime({
-
+        targets: projects,
+        translateY: [-100, 0],
+        opacity: [0,1],
+        delay: anime.stagger(100, {from: 'first'}),
+        duration: 1000
       })
       observer.unobserve(document.querySelector("#"+elementId))
       break;
@@ -255,14 +260,28 @@ const handleAnimation = (elementId) => {
     case 'works': 
       console.log('ini '+elementId)
       anime({
-
+        targets: document.querySelectorAll('.works-picture'),
+        translateX: [150, 0],
+        opacity: [0,1],
+        delay: anime.stagger(100, {from: 'last'}),
+        duration: 3000
+      })
+      anime({
+        targets: document.querySelector('.works-text'),
+        translateX: [-150, 0],
+        opacity: [0,1],
+        delay: anime.stagger(100, {from: 'last'}),
+        duration: 3000
       })
       observer.unobserve(document.querySelector("#"+elementId))
       break;
     case 'next': 
       console.log('ini '+elementId)
       anime({
-
+        targets: next,
+        translateY: [150, 0],
+        opacity: [0,1],
+        duration: 3000
       })
       observer.unobserve(document.querySelector("#"+elementId))
       break;
